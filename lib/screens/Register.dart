@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../colors.dart';
 import 'Login.dart';
+import 'common/TextFeild.dart';
 
 class Register extends StatelessWidget {
   const Register({Key? key}) : super(key: key);
@@ -17,14 +18,14 @@ class Register extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Text(
-                  'Welcome onboard !',
+                const Text(
+                  'Welcome onboard!',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 25,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 const Text(
@@ -33,19 +34,19 @@ class Register extends StatelessWidget {
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 70,
                 ),
                 InputFeild(
                   text: 'Enter your full name',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 InputFeild(
                   text: 'Enter your email',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 InputFeild(
@@ -69,16 +70,19 @@ class Register extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Login()),
                       );
                     },
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.all(25),
-                      child: Center(
-                          child: Text(
-                        'Register',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      )),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFFAA885),
+                    child: Opacity(
+                      opacity: 0.65,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        padding: EdgeInsets.all(25),
+                        child: Center(
+                            child: Text(
+                          'Register',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        )),
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFAA885),
+                        ),
                       ),
                     ),
                   ),
@@ -95,7 +99,7 @@ class Register extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pop(context,
+                        Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Login()));
                       },
                       child: Text(
@@ -112,29 +116,6 @@ class Register extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class InputFeild extends StatelessWidget {
-  InputFeild({required this.text});
-  final String text;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: TextField(
-        decoration: InputDecoration(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(20.0),
-            ),
-            filled: true,
-            hintStyle: TextStyle(
-              color: Colors.grey[800],
-            ),
-            hintText: text,
-            fillColor: Colors.white70),
       ),
     );
   }
