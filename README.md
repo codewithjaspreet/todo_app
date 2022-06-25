@@ -1,6 +1,6 @@
 # todo_app
 
-A new Flutter project.
+Design Credits : https://www.figma.com/file/RHGnp3zmerrEhVMDYXbgnQ/Todo-List-Mobile-App-Design-(Community)?node-id=0%3A1
 
 ## Getting Started
 
