@@ -19,9 +19,6 @@ class SplashScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(
-                  height: h * 0.1,
-                ),
                 Image.asset('assets/splash.png'),
                 SizedBox(
                   height: 40,
