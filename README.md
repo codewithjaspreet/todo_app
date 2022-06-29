@@ -2,7 +2,12 @@
 
 Design Credits : https://www.figma.com/file/RHGnp3zmerrEhVMDYXbgnQ/Todo-List-Mobile-App-Design-(Community)?node-id=0%3A1
 
-## Getting Started
+
+
+## Getting Started!
+
+![Green and White, Modern Announcement of Website Instagram Post](https://user-images.githubusercontent.com/85099922/176428746-decf7123-96ce-4156-b6a7-ee36f6b2d914.png)
+
 
 This project is a starting point for a Flutter application.
 
